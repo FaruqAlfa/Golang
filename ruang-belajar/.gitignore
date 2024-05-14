@@ -1,0 +1,73 @@
+Psudocode Library App
+
+Inisialisasi variabel:
+    dataBuku = {}
+    dataPeminjaman = {} 
+
+Login():
+    inputUsername = input("Masukkan username: ")
+    inputIdAnggota = input("Masukkan ID Anggota: ")
+
+peminjaman():
+    jmlBuku = input("jumlah buku yang ingin dipinjam: ")
+    
+    For i dari 1 hingga jmlBuku:
+        judulBuku = input("Masukkan judul buku")
+        idBuku = input("Masukkan ID buku")
+        
+        //Menyimpan informasi buku dalam dataPeminjaman
+        dataPeminjaman[idBuku] = {
+            'judul': judulBuku,
+            'id': idBuku,
+            'peminjam': inputUsername,
+            'status': 'dipinjam'
+        }
+        
+    // Print informasi buku yang akan dipinjam
+   	Print ("Data Buku yang Akan Dipinjam:")
+    Untuk buku dalam dataPeminjaman:
+        Print("Judul:", dataPeminjaman[buku]['judul'])
+        Print("ID:", dataPeminjaman[buku]['id'])
+        Print("Peminjam:", dataPeminjaman[buku]['peminjam'])
+        Print("Status:", dataPeminjaman[buku]['status'])
+    
+    // Menanyakan apakah sudah selesai
+    jika input("Apakah sudah selesai? (ya/tidak): ") == "tidak":
+        // Kembali ke menu pilihan peminjaman atau pengembalian
+        pilihMenu()
+    Else:
+        // Keluar dari sistem
+        Keluar()
+
+
+peminjaman():
+    jmlBuku = input("jumlah buku yang ingin dipinjam: ")
+    
+    For i dari 1 hingga jmlBuku:
+        judulBuku = input("Masukkan judul buku")
+        idBuku = input("Masukkan ID buku")
+        
+        //Menyimpan informasi buku dalam dataPeminjaman
+        dataPeminjaman[idBuku] = {
+            'judul': judulBuku,
+            'id': idBuku,
+            'peminjam': inputUsername,
+            'status': 'dipinjam'
+        }
+        
+    // Print informasi buku yang akan dipinjam
+   	Print ("Data Buku yang Akan Dipinjam:")
+    Untuk buku dalam dataPeminjaman:
+        Print("Judul:", dataPeminjaman[buku]['judul'])
+        Print("ID:", dataPeminjaman[buku]['id'])
+        Print("Peminjam:", dataPeminjaman[buku]['peminjam'])
+        Print("Status:", dataPeminjaman[buku]['status'])
+    
+    // Menanyakan apakah sudah selesai
+    jika input("Apakah sudah selesai? (ya/tidak): ") == "tidak":
+        // Kembali ke menu pilihan peminjaman atau pengembalian
+        pilihMenu()
+    Else:
+        // Keluar dari sistem
+        Keluar()
+
