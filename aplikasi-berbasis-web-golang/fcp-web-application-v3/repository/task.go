@@ -43,6 +43,7 @@ func (t *taskRepository) Delete(id int) error {
 	if err != nil {// pengecekkan error
 		return err
 	}
+	t.filebased.DeleteTask(id)
 	return nil // TODO: replace this
 }
 
