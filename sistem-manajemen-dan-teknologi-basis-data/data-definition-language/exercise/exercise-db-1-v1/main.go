@@ -20,11 +20,11 @@ type DBCredential struct {
 
 //TODO: masukkan CAMP_ID kalian dan Credential Database kalian disini
 var (
-	CAMP_ID = "BE1234567" // TODO: replace this
+	CAMP_ID = "BE7962834" // TODO: replace this
 
 	credential = DBCredential{
 		HostName:     "localhost",
-		DatabaseName: "Ruangguru",
+		DatabaseName: "kampusmerdeka",
 		Username:     "postgres",
 		Password:     "postgres",
 		Port:         "5432",
